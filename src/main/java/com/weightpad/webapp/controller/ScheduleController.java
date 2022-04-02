@@ -17,7 +17,8 @@ import com.weightpad.webapp.config.Config;
 
 @RestController
 //@CrossOrigin(origins = "https://college-project-frontend.herokuapp.com/")
-@CrossOrigin(origins = Config.frontendDomain)
+//@CrossOrigin(origins = "https://weightpad-frontend.herokuapp.com/")
+@CrossOrigin(origins = "http://http://localhost:3000/")
 
 @RequestMapping("/api/v1/user/schedule")
 public class ScheduleController {
