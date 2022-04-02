@@ -7,7 +7,7 @@ public class Config {
 	// I have to pass this value into @CrossOrigin annotation in the API controller endpoints, however 
 	// using a public static final variable was the only way I could get it to work as I cannot instantiate an object outside of a 
 	// class, furthermore the relevant get method failed to work
-	public static final String frontendDomain = "http://localhost:3000/";
+	public static final String frontendDomain = "https://weightpad-frontend.herokuapp.com/";
 	private String domain = "https://weightpad-backend.herokuapp.com/api/v1/";
 
 	public  String getDomain() {
