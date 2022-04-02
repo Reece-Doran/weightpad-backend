@@ -13,10 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.weightpad.webapp.model.Schedule;
 import com.weightpad.webapp.service.ScheduleService;
+import com.weightpad.webapp.config.Config;
 
 @RestController
 //@CrossOrigin(origins = "https://college-project-frontend.herokuapp.com/")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = Config.frontendDomain)
 
 @RequestMapping("/api/v1/user/schedule")
 public class ScheduleController {

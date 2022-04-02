@@ -36,11 +36,11 @@ import com.weightpad.webapp.model.Role;
 import com.weightpad.webapp.model.User;
 import com.weightpad.webapp.service.ScheduleService;
 import com.weightpad.webapp.service.UserService;
-
+import com.weightpad.webapp.config.Config;
 
 @RestController
 //@CrossOrigin(origins = "https://college-project-frontend.herokuapp.com/")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = Config.frontendDomain)
 //@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping("/api/v1")
 public class UserController {

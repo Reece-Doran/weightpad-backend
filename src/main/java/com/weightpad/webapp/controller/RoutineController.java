@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.weightpad.webapp.model.Routine;
 import com.weightpad.webapp.service.RoutineService;
+import com.weightpad.webapp.config.Config;
 
 //@CrossOrigin(origins = "https://college-project-frontend.herokuapp.com/")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = Config.frontendDomain)
 @RestController
 @RequestMapping("/api/v1/routine")
 public class RoutineController {
