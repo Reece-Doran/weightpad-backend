@@ -18,8 +18,9 @@ import com.weightpad.webapp.service.ExerciseService;
 import com.weightpad.webapp.config.Config;
 
 
+@CrossOrigin(origins = Config.frontendDomain)
 //@CrossOrigin(origins = "https://weightpad-frontend.herokuapp.com/")
-@CrossOrigin(origins = "http://localhost:3000/")
+//@CrossOrigin(origins = "http://localhost:3000/")
 @RestController
 @RequestMapping("/api/v1/exercise" )
 public class ExerciseController {
